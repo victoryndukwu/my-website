@@ -1,0 +1,48 @@
+@import url(c:\Users\user\Desktop\my-portfolio\src\GlobalStyles\globalstyles.css);
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+}
+
+.navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90vw;
+  margin: 20px 0 0 0;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar-listItem {
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+@media screen and (max-width: 414px) {
+  .navbar-listItem {
+    margin-bottom: 40px;
+  }
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: var(--purple);
+}
+
+.navbar .purple-text {
+  color: var(--purple);
+}
+/*# sourceMappingURL=Navbar.css.map */

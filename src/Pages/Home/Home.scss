@@ -1,0 +1,68 @@
+@import "../../GlobalStyles/globalstyles.css";
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--dark-blue);
+  height: 100vh;
+  z-index: -9;
+  &-title {
+    font-size: 70px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    @media screen and (max-width: 414px) {
+      max-width: 90%;
+    }
+  }
+
+  &-text {
+    text-align: left;
+    max-width: 90%;
+line-height: 30px;
+    @media screen and (max-width: 414px) {
+      max-width: 95%;
+    }
+  }
+}
+.purple-text {
+  color: var(--purple);
+  font-size: 100px;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin: 20px 0 0 0;
+  @media screen and (max-width: 414px) {
+    flex-direction: column-reverse;
+  }
+}
+.textarea {
+  background-color: inherit;
+}
+
+.illustration {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  @media screen and (max-width: 414px) {
+    width: 300px;
+    height: 300px;
+  }
+}
+.cta {
+  width: 100px;
+  height: 30px;
+  background-color: var(--purple);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: 20px;
+  a {
+    color: var(--white);
+    text-decoration: none;
+  }
+}

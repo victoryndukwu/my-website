@@ -1,0 +1,32 @@
+@import "../../GlobalStyles/globalstyles.css";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 20px 0 0 0;
+  }
+  &-menu {
+    display: flex;
+  }
+  &-listItem {
+    list-style-type: none;
+    margin: 0 10px;
+    @media screen and (max-width: 414px) {
+      margin-bottom: 40px;
+    }
+  }
+  &-link {
+    text-decoration: none;
+    color: var(--purple);
+  }
+  //   should  be in the global styles
+  .purple-text {
+    color: var(--purple);
+  }
+}

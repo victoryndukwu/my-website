@@ -1,0 +1,19 @@
+.blog {
+  display: flex;
+  flex-direction: column;
+  &-title {
+    font-size: 100px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+    @media screen and (max-width: 414px) {
+      max-width: 70%;
+    }
+  }
+  &-text {
+    text-align: left;
+    max-width: 50%;
+    @media screen and (max-width: 414px) {
+      max-width: 95%;
+    }
+  }
+}

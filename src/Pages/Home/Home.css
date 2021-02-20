@@ -1,0 +1,105 @@
+@import url(c:\Users\user\Desktop\my-portfolio\src\GlobalStyles\globalstyles.css);
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--dark-blue);
+  height: 100vh;
+  z-index: -9;
+}
+
+.home-title {
+  font-size: 70px;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+@media screen and (max-width: 414px) {
+  .home-title {
+    max-width: 90%;
+  }
+}
+
+.home-text {
+  text-align: left;
+  max-width: 90%;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 414px) {
+  .home-text {
+    max-width: 95%;
+  }
+}
+
+.purple-text {
+  color: var(--purple);
+  font-size: 100px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90vw;
+  margin: 20px 0 0 0;
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.textarea {
+  background-color: inherit;
+}
+
+.illustration {
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: inherit;
+}
+
+@media screen and (max-width: 414px) {
+  .illustration {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.cta {
+  width: 100px;
+  height: 30px;
+  background-color: var(--purple);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-top: 20px;
+}
+
+.cta a {
+  color: var(--white);
+  text-decoration: none;
+}
+/*# sourceMappingURL=Home.css.map */

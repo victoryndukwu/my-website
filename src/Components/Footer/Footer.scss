@@ -1,0 +1,29 @@
+@import "../../GlobalStyles/globalstyles.css";
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+  margin-top: 70px ;
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  &-menu {
+    display: flex;
+  }
+  &-link{
+      margin: 20px;
+      height: 50px;
+      width: 50px;
+  }
+  &-icon{
+    height: 20px;
+    width: 20px;
+    color: var(--purple);
+}
+
+}

@@ -1,0 +1,20 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* color Pallete */
+  --white: #fff;
+  --black: #000;
+  --dark-blue: #14213d;
+  --grey: #e5e5e5;
+  --purple: #7209b7;
+}
+
+body {
+  background-color: var(--grey);
+}
+/*# sourceMappingURL=globalstyles.css.map */
