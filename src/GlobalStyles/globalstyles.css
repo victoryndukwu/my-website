@@ -6,15 +6,19 @@
 }
 
 :root {
-  /* color Pallete */
+  /************ color Pallete ***************/
   --white: #fff;
-  --black: #000;
+  --black: #393e41;
   --dark-blue: #14213d;
-  --grey: #e5e5e5;
+  --grey: #fbfbf2;
   --purple: #7209b7;
+  /****************** Fonts *****************/
+  --body-font: "Comfortaa", cursive;
+  --thick-font: "Sarpanch", sans-serif;
+  --krona-font: "Krona One", sans-serif;
 }
 
 body {
-  background-color: var(--grey);
+  background-color: var(--white);
 }
 /*# sourceMappingURL=globalstyles.css.map */

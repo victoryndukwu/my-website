@@ -10,13 +10,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: var(--dark-blue);
+  color: var(--black);
   height: 100vh;
-  z-index: -9;
 }
 
 .home-title {
-  font-size: 70px;
+  font-size: 100px;
   font-weight: 300;
   margin: 0 0 20px 0;
 }
@@ -24,6 +23,7 @@
 @media screen and (max-width: 414px) {
   .home-title {
     max-width: 90%;
+    font-size: 50px;
   }
 }
 
@@ -31,17 +31,26 @@
   text-align: left;
   max-width: 90%;
   line-height: 30px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 414px) {
   .home-text {
     max-width: 95%;
+    font-size: 16px;
   }
 }
 
-.purple-text {
-  color: var(--purple);
-  font-size: 100px;
+.me {
+  color: var(--black);
+  font-size: 150px;
+}
+
+@media screen and (max-width: 414px) {
+  .me {
+    font-size: 100px;
+    font-weight: lighter;
+  }
 }
 
 .container {
@@ -52,7 +61,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 90vw;
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 @media screen and (max-width: 414px) {
@@ -68,38 +77,20 @@
   background-color: inherit;
 }
 
-.illustration {
-  width: 500px;
-  height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: inherit;
-}
-
-@media screen and (max-width: 414px) {
-  .illustration {
-    width: 300px;
-    height: 300px;
-  }
-}
-
 .cta {
-  width: 100px;
-  height: 30px;
-  background-color: var(--purple);
+  width: 250px;
+  height: 50px;
+  background-color: var(--white);
   border-radius: 5px;
-  border: none;
-  cursor: pointer;
+  border: 2px solid black;
   outline: none;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .cta a {
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
+  font-size: 20px;
 }
 /*# sourceMappingURL=Home.css.map */

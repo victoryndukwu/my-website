@@ -1,0 +1,33 @@
+.card .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  background-color: grey;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 300px;
+  width: 550px;
+}
+
+@media screen and (max-width: 414px) {
+  .card .container {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+.card .header {
+  background-color: pink;
+}
+
+.card .header .project-title {
+  font-size: 25px;
+}
+
+.card .header .project-technology {
+  font-size: 16px;
+}
+/*# sourceMappingURL=ProjectCards.css.map */

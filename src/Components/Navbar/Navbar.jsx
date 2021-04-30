@@ -1,45 +1,37 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { TweenMax, Power3 } from "gsap";
-import { FaHome } from "react-icons/fa";
+import { FaHome, FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
 
 export const Navbar = () => {
-  let emb = useRef(null);
-
-  useEffect(() => {
-    TweenMax.from(emb, 3, { opacity: 0, y: 200, ease: Power3.easeOut });
-  }, []);
+  // setting state
+  const [mobileMenu, toggleMobileMenu] = useState(false);
+  // changing state
+  const handleMenuToggle = () => {
+    toggleMobileMenu(!mobileMenu);
+  };
+  // close mobile menu
+  const closeMobileMenu = () => toggleMobileMenu(false);
 
   return (
     <>
-      <nav
-        className="navbar"
-        ref={(el) => {
-          emb = el;
-        }}>
+      <nav className="navbar">
         <div className="navbar-container">
-          <NavLink to="/" className="navbar-logo ">
-            <FaHome />
-          </NavLink>
+          <span className="navbar-hamburger-icon" onClick={handleMenuToggle}>
+            {/* {mobileMenu ? <FaTimes /> : <FaBars />} */}
+            MENU
+          </span>
 
-          {/* nav menu */}
-          <ul className="navbar-menu">
+          <ul
+            onClick={closeMobileMenu}
+            className={mobileMenu ? "navbar-menu active" : "navbar-menu"}>
             <li className="navbar-listItem">
-              <NavLink
-                exact
-                to=""
-                className="navbar-link"
-                activeClassName="active-link">
+              <NavLink exact to="" className="navbar-link">
                 Work
               </NavLink>
             </li>
             <li className="navbar-listItem">
-              <NavLink
-                exact
-                to=""
-                className="navbar-link"
-                activeClassName="active-link">
+              <NavLink exact to="" className="navbar-link">
                 Blog
               </NavLink>
             </li>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACX,gBAAgB,EAAE,KAAK;CACxB;;AACD,AAAA,KAAK,CAAC;EACJ,WAAW,EAAE,QAAQ;EACrB,WAAW,EAAE,GAAG;EAChB,KAAK,EAAE,KAAK;CACb",
+    "sources": [
+        "LoadingPage.scss"
+    ],
+    "names": [],
+    "file": "LoadingPage.css"
+}

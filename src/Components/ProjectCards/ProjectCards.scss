@@ -1,0 +1,25 @@
+.card {
+  .container {
+    display: flex;
+    border-radius: 10px;
+    background-color: grey;
+    flex-direction: column;
+    height: 300px;
+    width: 550px;
+    @media screen and (max-width: 414px) {
+      width: 300px;
+      height: 250px;
+    }
+  }
+  .header {
+    background-color: pink;
+    .project-title {
+      font-size: 25px;
+    }
+    .project-technology {
+      font-size: 16px;
+    }
+  }
+}
+
+// create a 2D grid that will contain the projects for large screens
