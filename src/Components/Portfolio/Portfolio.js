@@ -5,40 +5,42 @@ import ProjectCards from "../ProjectCards/ProjectCards";
 
 export const Portfolio = () => {
   return (
-    <div className="portfolio">
-      <motion.h2
-        className="portfolio-title"
-        initial={{ opacity: 0, y: 200 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 4 }}>
-        Projects
-      </motion.h2>
-      <div className="project-wrapper">
-        <ProjectCards
-          title="new facebook"
-          technology="react + vue + css"
-          detail="i just created the new facebook"
-        />
-        <ProjectCards
-          title="new facebook"
-          technology="react + vue + css"
-          detail="i just created the new facebook"
-        />
-        <ProjectCards
-          title="new facebook"
-          technology="react + vue + css"
-          detail="i just created the new facebook"
-        />
-        {/* <ProjectCards
-          title="new facebook"
-          technology="react + vue + css"
-          detail="i just created the new facebook"
-        /> */}
+    <motion.section className="portfolio" >
+      <div className="container">
+        {/* Title */}
+        <motion.h2
+          className="portfolio-title"
+          initial={{ opacity: 0, y: 200 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 4 }}>
+          Projects
+        </motion.h2>
+        {/* Grid wrapper for project cards   */}
+        <div className="project-wrapper">
+          <ProjectCards
+            title="New Facebook"
+            technology="react + vue + css"
+            detail="i just created the new facebook, this ought to make mark mad and try to buy it"
+          />
+          <ProjectCards
+            title="New Facebook"
+            technology="react + vue + css"
+            detail="i just created the new facebook, this ought to make mark mad and try to buy it"
+          />
+          <ProjectCards
+            title="New Facebook"
+            technology="react + vue + css"
+            detail="i just created the new facebook, this ought to make mark mad and try to buy it"
+          />
+          <ProjectCards
+            title="new facebook"
+            technology="react + vue + css"
+            detail="i just created the new facebook, this ought to make mark mad and try to buy it"
+          />
+        </div>
       </div>
-    </div>
+    </motion.section>
   );
 };
 
 export default Portfolio;
-// note to self
-// create project cards for your individual projects

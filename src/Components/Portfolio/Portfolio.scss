@@ -1,24 +1,33 @@
 .portfolio {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: auto;
+  align-items: center;
   width: 100vw;
-  padding: 0 80px;
-  background-color: yellow;
+  margin: 10px 0 0 0;
+
+  @media screen and (max-width: 414px) {
+    width: 100vw;
+    min-height: auto;
+  }
+
+  .container {
+    width: 90vw;
+  }
   &-title {
     color: black;
     font-size: 50px;
     font-weight: normal;
+    margin-bottom: 20px;
   }
   .project-wrapper {
     display: grid;
-    grid-template-columns: 200px 100px;
-    grid-template-rows: 50px 50px;
-    grid-gap: 380px;
+    grid-template-columns: repeat(2, 550px);
+    grid-gap: 30px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     @media screen and (max-width: 414px) {
-      display: flex;
-      flex-direction: column;
+      grid-template-columns: 1fr;
     }
   }
 }

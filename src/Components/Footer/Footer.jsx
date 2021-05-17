@@ -10,7 +10,7 @@ export const Footer = () => {
           <a className="footer-link" href="https://twitter.com/N__Victory">
             <FaTwitter className='footer-icon' />
           </a>
-          <a className="footer-link" href="https://github/victoryndukwu">
+          <a className="footer-link" href="https://github.com/victoryndukwu">
             <FaGithub className='footer-icon' />
           </a>
           <a className="footer-link" href="https://www.linkedin.com/in/victory-ndukwu-520163145/">

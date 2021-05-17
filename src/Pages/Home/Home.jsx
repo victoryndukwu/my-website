@@ -1,28 +1,45 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
+const fadeTransition = {
+  in: { opacity: 0 },
+  animate: { opacity: 1 },
+  out: { opacity: 0 },
+};
+
+const pageTransition = {
+  duration: 5,
+};
+
 export const Home = () => {
   return (
-    <section className="home">
+    <motion.section
+      className="home"
+      initial="in"
+      animate="animate"
+      exit="out"
+      transition={pageTransition}
+      variants={fadeTransition}>
       <div className="container">
-        <div className="textarea">
           <h2 className="home-title">
-            Hello, I'm
+            hello, I'm
             {/* seperating the word me */}
-            <div className="me">Victory</div>
+            <motion.div
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 2 }}
+              className="me">
+              Victory
+            </motion.div>
           </h2>
           <motion.p
             className="home-text"
             initial={{ opacity: 0, y: 200 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{duration: 1.5}}
-            >
-            Software Engineer, focused on front end web development. I do not just build user-centric, responsive
-            websites, I create remarkable experiences on the internet. <br />I
-            am currently open to remote, full time, and contract gigs. Feel free
-            to contact me whenever you like.
+            transition={{ duration: 1.5 }}>
+            Software Engineer, Technical Writer and Content Creator
           </motion.p>
 
           <motion.button
@@ -32,8 +49,7 @@ export const Home = () => {
             className="cta">
             <Link to="mailto:victoryndukwu7@gmail.com">Get in touch</Link>
           </motion.button>
-        </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
